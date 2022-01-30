@@ -6,7 +6,7 @@ public class ProductManagement {
 
     public List<Product> validProductList = new ArrayList<>();
 
-    public void createProduct(String productName, String UPCCode, double weight){
+    public void createProduct(String productName, String UPCCode, Double weight){
         Product product = new Product(productName, UPCCode, weight);
         validateProduct(product);
         addProductToList(product);
