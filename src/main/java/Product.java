@@ -4,7 +4,7 @@ public class Product {
     private Double weight;
     private boolean oversized;
 
-    public Product(String productName, String UPCCode, double weight){
+    public Product(String productName, String UPCCode, Double weight){
         this.productName = productName;
         this.UPCCode = UPCCode;
         this.weight = weight;
@@ -30,11 +30,11 @@ public class Product {
         this.UPCCode = UPCCode;
     }
 
-    public double getWeight() {
+    public Double getWeight() {
         return weight;
     }
 
-    public void setWeight(double weight) {
+    public void setWeight(Double weight) {
         if (weight>=50)
             setOversized(true);
         else
